@@ -49,4 +49,17 @@ class BinarySearchTree:
         else:
             return add_node(self.root,key,value)
 
+    def remove (self,key:Any)->bool:
+        p=self.root
+        parent=None
+        is_left_child=True
+        
+        while True:
+            if p is None:
+                return False
+            
+            if key ==p.key:
+                break
+
+
 
